@@ -13,11 +13,11 @@
 .PageHeader_header a {
   text-decoration: none;
 }
-  .PageHeader_nav {
+.PageHeader_nav {
   display: flex;
   list-style: none;
 }
-  .PageHeader_nav li {
+.PageHeader_nav li {
   margin-left: 30px;
   color: white;
 }

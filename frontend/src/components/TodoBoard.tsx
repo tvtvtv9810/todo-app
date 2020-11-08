@@ -1,24 +1,13 @@
 import React from "react";
 import './TodoBoard.css';
+import { TodoForm } from './TodoForm';
+import { TodoFilter } from './TodoFilter';
 
 export const TodoBoard: React.FC = () => {
   return (
     <div className="TodoBoard_content">
-      <div className="TodoForm_content">
-        <form className="TodoForm_form">
-          <div className="TodoForm_input">
-            <input type="text" placeholder="タスクを入力してください" />
-          </div>
-          <div className="TodoForm_button">
-            <button type="button">追加</button>
-          </div>
-        </form>
-      </div>
-      <div className="TodoFilter_content">
-        <button className="TodoFilter_buttonSelected">全て</button>
-        <button className="TodoFilter_buttonUnselected">未完了のみ</button>
-        <button className="TodoFilter_buttonUnselected">完了のみ</button>
-      </div>
+      <TodoForm />
+      <TodoFilter />
       <ul className="TodoList_list">
         <li className="TodoItem_item">
           <div className="TodoItem_todo">
